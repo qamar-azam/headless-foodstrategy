@@ -1,0 +1,30 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+@layer components {
+  .case-study-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none;
+  }
+  .case-study-list li {
+    background-color: #f0f5f8;
+    width: calc(33.33333% - 2.5rem);
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+}
